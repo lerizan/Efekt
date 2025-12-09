@@ -1,0 +1,12 @@
+name: Efekt
+version: '1.2.5'
+main: leriz.efekt.Efekt
+api-version: '1.13'
+authors: [ lerizan ]
+
+commands:
+  efekt:
+    description: Efekt yönetim komutu
+    usage: /efekt <ver|sıfırla> <oyuncu>
+    permission: efekt.admin
+    permission-message: Bu komutu kullanmak için yetkiniz yok

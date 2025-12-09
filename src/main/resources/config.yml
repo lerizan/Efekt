@@ -1,0 +1,31 @@
+gerekli-bloklar: 1200
+#efekt ekleyebilirsiniz
+efektler:
+  - tip: STRENGTH
+    seviye: 2
+  - tip: SPEED
+    seviye: 2
+  - tip: HASTE
+    seviye: 2
+
+mesajlar:
+  ilerleme: "&eBüyüleri almak için blok kır! &7{bloklar}/{gerekli}"
+  aktif-edildi: "&aBüyüler aktif edildi"
+  title-baslik: "&aBaşarılı!"
+  title-alt-baslik: "&7Sonunda {gerekli} blok kırdığın için büyüleri alabiliceksin"
+  respawn-title-baslik: "&eBüyü"
+  respawn-title-alt-baslik: "&cÖldüğün için büyüleri tekrar aldın"
+  
+sesler:
+  efekt-alindi: "ENTITY_PLAYER_LEVELUP"
+  ses-seviyesi: 1.0
+  
+ayarlar:
+  actionbar-goster: true
+  actionbar-sonsuz-goster: true
+  belirli-bloklar-say: false
+  sayilacak-bloklar: []
+
+#komutlar için gerekli yetki: efekt.admin
+
+#herhangi bir sorunda discord:lerizan veya https://discord.gg/qrrGnkvdMB
