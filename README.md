@@ -2,19 +2,6 @@
 
 Minecraft sunucunuz için geliştirilmiş oyuncuların belirli miktarda blok kırdıktan sonra özel efektler almasını sağlayan bir plugin.
 
-## Özellikler
-
-- **Blok Kırma Sistemi**: Oyuncular belirlediğiniz miktarda blok kırdıktan sonra özel efektler alır
-- **Kalıcı Veri Saklama**: SQLite veritabanı ile oyuncu verileri kalıcı olarak saklanır
-- **ActionBar Gösterimi**: Oyuncular ilerlemelerini actionbar'da sürekli görebilir
-- **Title Bildirimleri**: Efektler alındığında ve respawn sonrası özel title mesajları gösterilir
-- **Ses Efektleri**: Efektler verildiğinde özelleştirilebilir ses çalar
-- **Admin Komutları**: Oyunculara manuel efekt verme ve ilerleme sıfırlama
-- **Config Desteği**: Tüm ayarlar config dosyasından kolayca yönetilebilir
-- **Ölüm Sonrası**: Oyuncular öldükten sonra respawn olduğunda efektler otomatik geri verilir
-- **Totem Desteği**: Totem patladığında efektler tekrar verilir
-
-
 ## Komutlar
 
 ### Admin Komutları
@@ -78,12 +65,6 @@ sesler:
   ses-seviyesi: 1.0                      # Ses seviyesi (0.0 - 1.0)
 ```
 
-**Popüler Ses Seçenekleri:**
-- `ENTITY_PLAYER_LEVELUP` - Seviye atlama sesi
-- `ENTITY_EXPERIENCE_ORB_PICKUP` - XP toplama sesi
-- `BLOCK_NOTE_BLOCK_PLING` - Not bloğu sesi
-- `ENTITY_PLAYER_LEVELUP` - Başarı sesi
-
 ### Ayarlar
 
 ```yaml
@@ -98,22 +79,13 @@ ayarlar:
 
 1. Oyuncular sunucuda blok kırmaya başlar
 2. Her blok kırıldığında ilerleme kaydedilir
-3. ActionBar'da oyuncular ilerlemelerini görür: `Büyüleri almak için blok kır! 500/1200`
+3. ActionBarda oyuncular ilerlemelerini görür: `Büyüleri almak için blok kır! 500/1200`
 4. Belirlenen miktarda blok kırıldığında:
    - Efektler otomatik olarak verilir
    - Title mesajı gösterilir
    - Ses çalar
    - Veriler veritabanına kaydedilir
 5. Oyuncu öldüğünde veya totem patladığında efektler otomatik geri verilir
-
-## Veritabanı
-
-Plugin SQLite veritabanı kullanarak oyuncu verilerini saklar. Veritabanı dosyası `plugins/Efekt/data.db` konumunda bulunur.
-
-**Saklanan Veriler:**
-- Oyuncu UUID'si
-- Kırılan blok sayısı
-- Efekt durumu (aktif/pasif)
 
 ## Yetkiler
 
@@ -125,7 +97,6 @@ Plugin SQLite veritabanı kullanarak oyuncu verilerini saklar. Veritabanı dosya
 ```
 /lp user OyuncuAdı permission set efekt.admin
 ```
-
 
 **Veriler kayboluyor:**
 - `plugins/Efekt/data.db` dosyasının silinmediğinden emin olun
