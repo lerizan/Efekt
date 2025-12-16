@@ -37,14 +37,6 @@ efektler:
     seviye: 2          # Efekt seviyesi
 ```
 
-**Mevcut Efekt Tipleri:**
-- `STRENGTH` - Kuvvet
-- `SPEED` - Hız
-- `HASTE` - Acele
-- `REGENERATION` - Yenilenme
-- `FIRE_RESISTANCE` - Ateş Direnci
-- Ve daha fazlası...
-
 ### Mesajlar
 
 ```yaml
